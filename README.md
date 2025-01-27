@@ -1,8 +1,19 @@
 # Teratec Hackathon 2025 - Team 10
 
-This repository contains the work done for the Teratec Hackathon 2025, centered around two challenges:
-- **Optimization and parallelization of Black-Scholes Monte Carlo** for Arm-based architectures (provided by Viridien).
-- **Porting and optimization of Code_Aster**, an industrial HPC application (provided by EDF).
+This repository contains our team's work for the Teratec Hackathon 2025, focusing on two main challenges:
+
+## Challenges
+
+### 1. Black-Scholes Monte Carlo Optimization
+- Provided by Viridien
+- Focus on optimization and parallelization for Arm-based architectures
+- Implementation and testing on Graviton3/Graviton4 processors (Arm Neoverse)
+- Progressive optimization from basic implementation to hybrid parallelization
+
+### 2. Code_Aster Optimization
+- Provided by EDF
+- Industrial HPC application porting and optimization
+- Focus on performance improvement for Arm architecture
 
 The objective was to explore scalability, performance, and optimizations on Graviton3/Graviton4 processors (Arm Neoverse).
 
@@ -56,24 +67,50 @@ black_scholes_monte_carlo/
 │       ├── Makefile                   # Makefile for MPI + OpenMP + ARMPL
 |       └── script_3.sh                # Script to execute the MPI version with varying numbers of simulations and threads
 |        
-├── results/                           # Results folder
-│   ├── benchmarks/                    # Benchmarking results
-│   │   ├── version_1.csv              # Results for version 1
-│   │   ├── version_2.csv              # Results for version 2
-│   │   ├── ...                        # Results for other versions
+├── results/                           
+│   ├── benchmarks/                    # Performance benchmarks
+│   │   ├── benchmark_96_threads_script.py
+│   │   ├── benchmark_comparison_96_threads_selected.csv
+│   │   └── benchmark_final_results.csv
+│   │   ├── ...                         # Results for other versions (more details in the report)
 |   |   |
-│   ├── profiling/                     # Profiling reports
-│   │   ├── version_1_report.txt       # Profiling report for version 1
-│   │   ├── version_2_report.txt       # Profiling report for version 2
-│   │   ├── ...                        # Reports for other versions
+│   |   |
 |   |   |
-│   └── validation/                    # Validation outputs
-│       ├── test_1_output.txt          # Test output for case 1
-│       ├── test_2_output.txt          # Test output for case 2
-│       ├── ...                        # Outputs for other tests
+│   └── validation/                    # Validation results
+│       ├── results_v6_nodes.csv       # Version 6 results across nodes
+│       └── results_vf_nodes.csv       # Final version results across nodes
 ```
 
+Each version directory contains:
+- Source code (BSM_vX.cxx)
+- Makefile for compilation
+- Execution scripts
+  
 ---
 
 ### **code_aster** 
 - **`build/`**: Build and compilation configurations.
+
+---
+
+## Documentation
+
+- Detailed implementation information can be found in each component's README
+- Full analysis and results are available in the project report
+
+---
+
+## Team Members
+
+- Nadir Ouagued
+- Rania Merad
+- Zakaria Anzid
+- Amine Mouloudj
+
+---
+
+## Acknowledgments
+
+- Viridien for the Black-Scholes challenge
+- EDF for the Code_Aster challenge
+- Teratec for organizing the hackathon
