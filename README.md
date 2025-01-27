@@ -107,7 +107,7 @@ Each version directory contains:
 - @nadir-ogd - Nadir Ouagued
 - @raniamerad - Rania Merad
 - @zaksquirrel - Zakaria Anzid
-- Amine-Mouloud - Amine Mouloudj 
+- @Amine-Mouloud - Amine Mouloudj 
 
 ---
 
