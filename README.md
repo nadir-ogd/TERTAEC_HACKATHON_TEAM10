@@ -72,13 +72,15 @@ black_scholes_monte_carlo/
 │   │   ├── benchmark_96_threads_script.py
 │   │   ├── benchmark_comparison_96_threads_selected.csv
 │   │   └── benchmark_final_results.csv
-│   │   ├── ...                         # Results for other versions (more details in the report)
+│   │   ├── ...                        # Results for other versions (more details in the report)
 |   |   |
 │   |   |
-|   |   |
 │   └── validation/                    # Validation results
 │       ├── results_v6_nodes.csv       # Version 6 results across nodes
 │       └── results_vf_nodes.csv       # Final version results across nodes
+│       ├── ...                        # Results for other versions (more details in the report)
+|       
+└──
 ```
 
 Each version directory contains:
@@ -100,12 +102,12 @@ Each version directory contains:
 
 ---
 
-## Team Members
+## Team 10 Members
 
-- Nadir Ouagued
-- Rania Merad
-- Zakaria Anzid
-- Amine Mouloudj
+- @nadir-ogd - Nadir Ouagued
+- @raniamerad - Rania Merad
+- @zaksquirrel - Zakaria Anzid
+- Amine-Mouloud - Amine Mouloudj 
 
 ---
 
