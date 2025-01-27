@@ -143,4 +143,4 @@ make distclean
 ./install_prerequisite.sh petsc
 ```
 
-Note : More details about errors will be shown in the report.
+Note: Detailed information about the errors encountered during the compilation process will be included in the report to assist in resolving them effectively.
